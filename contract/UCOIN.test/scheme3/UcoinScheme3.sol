@@ -16,12 +16,12 @@ interface ITransferComment {
     /**
      * @dev Returns the result of comment adding
      */
-    function transferWithMsg(address coinContract, address from, address recipient, uint256 amount, string memory comment) external view returns (bool);
+    function transferWithMsg(address coinContract, address from, address recipient, uint256 amount, string memory comment) external returns (bool);
     /**
      * @dev Returns the result of comment adding
      * do not use contract storage
      */
-    function transferWithMsg2(address coinContract, address from, address recipient, uint256 amount, string memory comment) external view returns (bool);
+    function transferWithMsg2(address coinContract, address from, address recipient, uint256 amount, string memory comment) external returns (bool);
 }
 
 
